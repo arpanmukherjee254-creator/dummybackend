@@ -3,7 +3,14 @@ const cors = require("cors");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-app.use(cors()); // allow all origins
+
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "https://kreo-support-ticket-intelligence.netlify.app"
+  ],
+  methods: ["GET","POST"],
+}));
 app.use(express.json());
 const insights = [
   {
