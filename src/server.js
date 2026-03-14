@@ -1,8 +1,10 @@
 const express = require("express");
+const cors = require("cors");
 
 const app = express();
-const PORT = 3000;
-
+const PORT = process.env.PORT || 3000;
+app.use(cors()); // allow all origins
+app.use(express.json());
 const insights = [
   {
     "issue": "Battery Problems",
@@ -101,6 +103,10 @@ app.get("/insights", (req, res) => {
   res.json(insights);
 });
 
+app.post("/rebuild-insights", (req, res) => {
+  res.json({ message: "Rebuild triggered" });
+});
+
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
