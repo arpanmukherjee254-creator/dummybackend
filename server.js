@@ -97,7 +97,7 @@ const insights = [
   }
 ]
 
-app.get("F", (req, res) => {
+app.get("/insights", (req, res) => {
   res.json(insights);
 });
 
