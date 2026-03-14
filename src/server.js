@@ -21,10 +21,10 @@ const insights = [
       "product recommendation i'm having an issue with the product . please assist. please note, you might have already paid for this product, which means spectators are not buying any of the products from the sale as their donations will go straight i've noticed a sudden decrease in battery life on my product . it used to last much longer.",
       "battery life i'm having an issue with the product . please assist. i was able to get my $50 bag from the vendor, but the bags i was wearing in the show were covered in stickers and the price for those i've tried different settings and configurations on my product , but the issue persists."
     ],
-    "trend": "decreasing",
-    "growth_rate": -0.666666666666667,
-    "impact_score": 102.333333333333,
-    "priority": "critical"
+      "trend": "increasing",
+    "growth_rate": 3.5,
+  "impact_score": 920,
+  "priority": "critical"
   },
   {
     "issue": "Account Access Issues",
